@@ -17,8 +17,6 @@
 #include <cstdio>
 #include <new>
  
-using namespace std;
- 
   class rational
     {
     private:
