@@ -1,4 +1,4 @@
-# Rational
+# Rational Class - C++
 
 Why I Started This Project:
 May 2015, I was making my semester project, which was a command-line matrix manipulator application written in c++.
