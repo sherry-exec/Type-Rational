@@ -1,0 +1,36 @@
+include required libraries
+
+#include <rational.h>
+
+using namespace std;
+
+int main()
+{
+    rational r1 = 5;        // 5/1
+    rational r2   (4,3);    // 4/3
+    rational r3 = "76/16";  // simplifies to 19/4
+
+    double d = 4.75;
+    rational r4 = d;        // converts 4.75 to its equivalent fraction 19/4 in this case.
+
+    r3.c_display(); cout << endl ;
+    cout << r3 << endl ;
+
+    r4.c_display(); cout << endl ;      //display 19/4
+    cout << r4 << endl << endl ;        //display 4.75
+
+    // All Arithmetic and Logical Comparison operators are overloaded.
+
+    r1 = r2 + 5;            // here r2=4/3, adding 5 to it doesnot means adding 5 to its quotient,
+                            // here 4/3 + 5/1 LCM will be performed
+    r1.c_display(); cout << endl ;  //display 19/3
+    cout << r1 << endl << endl ;    //display 6.333 (console precision can be set manually)
+
+    r2 *= r2.reciprocal();  // 4/3 * 3/4 = 1
+    r2.c_display();         // display 1, not 1/1
+
+    // Increment and Decrement operators are overloaded.
+    // Assignment and Compound Assignment operators are overloaded.
+
+    return 0;
+}
