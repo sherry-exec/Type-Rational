@@ -1,0 +1,28 @@
+Few Steps and Start Development:
+
+1. Create a Dynamic Link Library Project, Choose C++ Language.
+2. Paste Header
+3. Paste Source
+4. Make Changes(Optional)
+5. Compile
+6. Done.
+
+Pick Header, Link, and DLL File and start development..
+
+For Beginners:
+After the above three files created, There are two ways to use this in your programs.
+1. Attach it to your IDE compile sources. (this helps using this in all programs your make) (recommended)
+2. Use only in the project you want.
+
+1.  IDE SOURCES:
+    header file in include folder of your IDE.
+    dll file in bin folder of your IDE.
+    linker (*.a) file in lib folder of your IDE.
+    
+    Some IDE requires to link files to be stated explicitly, under linker options..
+    /*i will shortly write it for Code::Blocks*/ /*Code::Blocks is our recommended IDE*/
+    
+2.  SPECIFIC PROJECT:
+    header file in include folder of your project.
+    dll file in the folder where your .exe will be generated. (it is usually bin\debug)
+    place linker file anywhere but your have to put its path in your project's properties (not IDE's), under linker options.
