@@ -10,13 +10,6 @@
 #ifndef RATIONAL_H_
 #define RATIONAL_H_
  
-#include <iostream>
-#include <string>
-#include <exception>
-#include <cstdlib>
-#include <cstdio>
-#include <new>
- 
   class rational
     {
     private:
